@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
@@ -14,26 +17,29 @@
 
 <body class="bg-img">
 
-  <main class="container-fluid packages-bg">
-    <section class="row">
+  <main class="container packages-bg">
+    <section class="row my-font">
       <div class="col-12 d-flex justify-content-evenly my-2 pb-2 green-border">
         <h1 class="text-light">Filter by:</h1>
         <button onclick="filterHeavy()">
-          <h1>Heavy</h1>
+          <h3>Heavy</h1>
         </button>
         <button onclick="filterPriority()">
-          <h1>Priority</h1>
+          <h3>Priority</h1>
         </button>
         <button onclick="filterFragile()">
-          <h1>Fragile</h1>
+          <h3>Fragile</h3>
+        </button>
+        <button onclick="drawPackages(packages)">
+          <h3>Reset Filters</h3>
         </button>
       </div>
-      <section class="row justify-content-evenly text-light" id="packages">
-        <!-- packages go here -->
-        </div>
-      </section>
-
     </section>
+    <section class="row justify-content-evenly text-light" id="packages">
+      <!-- packages HTML goes here -->
+      </div>
+    </section>
+
   </main>
 
 

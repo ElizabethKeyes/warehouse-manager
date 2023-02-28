@@ -48,11 +48,11 @@ const packages = [{
   trackingNumber: 'suz2367'
 }]
 
-drawAllPackages(packages)
+drawPackages(packages)
 
 let template = ""
 
-function drawAllPackages(packages) {
+function drawPackages(packages) {
   let packageElem = document.getElementById("packages")
   let template = ""
   packages.forEach(p => {
@@ -68,20 +68,18 @@ function drawAllPackages(packages) {
 
 function filterHeavy() {
   console.log("filterHeavy invoked")
+  let heavyPackages = packages.filter(p => p.weight >= 5)
+  drawPackages(heavyPackages)
 }
 
 function filterPriority() {
   console.log("filterPriority invoked");
+  let priorityPackages = packages.filter(p => p.priorityLevel == "express")
+  drawPackages(priorityPackages)
 }
 
 function filterFragile() {
   console.log("filterFragile invoked");
+  let fragilePackages = packages.filter(p => p.isFragile)
+  drawPackages(fragilePackages)
 }
-
-
-{/* <div class="col-5 text-light border">
-  <p>TO: Testing<br>
-    WEIGHT: 1234<br>
-      PRIORITY: standard<br>
-        FRAGILE: yes</p>
-    </div> */}
