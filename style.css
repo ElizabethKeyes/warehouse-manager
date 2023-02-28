@@ -3,7 +3,7 @@
 }
 
 .header-card {
-  background-color: rgba(0, 0, 0, 0.454);
+  background-color: rgba(0, 0, 0, 0.525);
 }
 
 .bg-img {
@@ -15,9 +15,9 @@
 
 .packages-bg {
   background-color: black;
-  min-height: 75vh;
+  min-height: 60vh;
   min-width: 75vw;
-  margin-top: 6em;
+  margin-top: 3em;
   border: white solid 5px
 }
 

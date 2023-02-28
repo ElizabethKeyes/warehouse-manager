@@ -15,8 +15,14 @@
   <title>Warehouse Manager</title>
 </head>
 
-<header class="container-fluid header-card text-light p-2">
-  <h1><i class="mdi mdi-archive-outline"></i>Find the Missing Package</h1>
+<header class="container-fluid header-card text-light py-2">
+  <section class="row justify-content-between">
+    <div class="col-12">
+      <h1><i class="mdi mdi-archive-outline me-3"></i>Welcome to our Warehouse!</h1>
+      <p>Unfortunately, we've been losing a lot of items. One of the packages listed on our roster is missing, but
+        we're not sure which one. Please use the clues below and let us know whose package it is!</p>
+    </div>
+  </section>
 </header>
 
 <body class="bg-img">
@@ -45,13 +51,13 @@
     </section>
     <section class="row">
       <div class="col-6">
-        <button onclick="giveClue()">Get a Clue</button>
+        <button onclick="giveClue()" class="m-2">Get a Clue</button>
         <div id="clues" class="text-light">
           <!-- clue text goes here -->
         </div>
       </div>
       <div class="col-6 text-end">
-        <button onclick="lookForPackage()">Make a Guess</button>
+        <button onclick="lookForPackage()" class="m-2">Make a Guess</button>
       </div>
     </section>
   </main>
