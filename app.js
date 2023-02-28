@@ -119,3 +119,21 @@ function filterFragile() {
   let fragilePackages = packages.filter(p => p.isFragile)
   drawPackages(fragilePackages)
 }
+
+function lookForPackage() {
+  let guess = window.prompt("Enter the full name of your guess")
+  let findGuess = packages.find(p => p.to == guess)
+  if (findGuess == undefined) {
+    window.alert("Please enter a valid name and ensure it is typed as displayed.")
+  }
+  console.log(findGuess);
+  if (findGuess.isMissing) {
+    window.alert("You've found the missing package!")
+    findGuess.isMissing = false
+    drawPackages(packages)
+    losePackage()
+    console.log(packages, "end");
+  } else if (!findGuess.isMissing) {
+    window.alert("The package is still missing. Keep trying!")
+  }
+}
