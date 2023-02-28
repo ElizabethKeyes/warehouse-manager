@@ -1,0 +1,22 @@
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.packages-bg {
+  background-color: black;
+  min-height: 75vh;
+  min-width: 75vw;
+  margin-top: 6em;
+  border: white solid 5px
+}
+
+.green-border {
+  border-bottom: limegreen solid 5px;
+}
+
+.text-green {
+  color: limegreen;
+}
